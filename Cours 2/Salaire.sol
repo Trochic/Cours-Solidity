@@ -28,7 +28,7 @@ contract Salaire {
     //nouvelEmploye()
 
     //On souhaite suivre le montant total d'eth déposé dans le contrat
-    //Va seulement nous servir à déposer de l'EthS
+    //Va seulement nous servir à déposer de l'Eth
     //depot()
 
     //Verifier si l'appelant est un employe à l'aide du modifier estEmploye()
