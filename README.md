@@ -13,3 +13,6 @@ Premier cours sur le langage Solidity, création de 3 smarts contracts permettan
 2 - Déposer et retirer de la crypto d'un smart contract
 3 - Création d'un contrat permettant la rémunération d'employé via une répartition équitable de la crypto contenue dans le contrat
 
+Cours 3 : 
+
+Second cours sur le langage Solidity, présentation sur les EIPs (Standards ERC), création d'un contrat de token BEP20, et démonstration de Metamask et de l'explorateur de bloc.
