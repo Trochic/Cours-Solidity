@@ -260,17 +260,22 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, IERC721Enumerable 
     function _beforeTokenTransfer(address from, address to, uint256 tokenId) internal virtual { }
 }
 
-contract Collection is Erc721 {
+contract Collection is ERC721 {
 
     uint public maxNft = 5;
-
+    uint public nbNft;
     
-    constructor() ERC721("Kamels", "KC") {
 
+    constructor() ERC721("Kamels", "KC") {
+        nbNft=0;
     }
 
     function mintKamel(address to, string memory tokenURI) external returns (uint256) {
-        
+        require(nbNft <= maxNft, "Erreur");
+        nbNft=nbNft+1;
+        _safeMint(to, nbNft);
+        _setTokenURI(nbNft, tokenURI);
+        return nbNft;
     }
 
 }
